@@ -4,7 +4,6 @@ import random
 
 
 pygame.init()
-
 black=(0,0,0)
 blue =(0,0,255)
 green=(0,255,0)
@@ -24,9 +23,9 @@ grass2=pygame.transform.scale(grass2,(1260,650))
 font = pygame.font.SysFont(None, 55)
 
 
-bg=pygame.image.load("Downloads\bg.jpg")
+bg=pygame.image.load("bg.jpg")
 bg=pygame.transform.scale(bg,(1260,650))
-grass=pygame.image.load("Downloads\grass.jpg")
+grass=pygame.image.load("grass.jpg")
 grass=pygame.transform.scale(grass,(1260,650))
 
 
@@ -48,12 +47,12 @@ def gameplay(speed_v):
     x_speed=0
     y_speed=0
     list = []
-    apple=pygame.image.load(r"Downloads\ap.png")
+    apple=pygame.image.load(r"ap.png")
     apple=pygame.transform.scale(apple,(75,50))
     s_length= 1
     mouse=pygame.mouse.get_pos()
     click=pygame.mouse.get_pressed()
-    back=pygame.image.load(r"Downloads\back.png")  #button png image
+    back=pygame.image.load(r"back.png")  #button png image
     back=pygame.transform.scale(back,(50,50))
     game=False 
     over=False
@@ -141,7 +140,7 @@ def gameplay(speed_v):
      
     
 def level():    #all buttons 
-    back=pygame.image.load(r"Downloads\back.png")  #button png image
+    back=pygame.image.load(r"back.png")  #button png image
     back=pygame.transform.scale(back,(50,50))
     level_game=False
     while level_game==False:
@@ -149,15 +148,15 @@ def level():    #all buttons
             if event.type==pygame.QUIT:
                 level_game=True
 
-            grass2=pygame.image.load("Downloads\grass2.jpg")
+            grass2=pygame.image.load("grass2.jpg")
             grass2=pygame.transform.scale(grass2,(1289,605))
             screen.blit(bg,(0,0))
-            level1=pygame.image.load("Downloads\level1.png")  #button png image
-            level2=pygame.image.load("Downloads\level2.png")  #button png image
-            level3=pygame.image.load("Downloads\level3.png")  #button png image
-            level4=pygame.image.load("Downloads\level4.png")
-            level5=pygame.image.load("Downloads\level5.png")  #button png image
-            level6=pygame.image.load("Downloads\level6.png")
+            level1=pygame.image.load("level1.png")  #button png image
+            level2=pygame.image.load("level2.png")  #button png image
+            level3=pygame.image.load("level3.png")  #button png image
+            level4=pygame.image.load("level4.png")
+            level5=pygame.image.load("level5.png")  #button png image
+            level6=pygame.image.load("level6.png")
             level1=pygame.transform.scale(level1,(180,180))
             level2=pygame.transform.scale(level2,(180,180))
             level3=pygame.transform.scale(level3,(180,180))
@@ -246,8 +245,8 @@ def snake_length(screen, color, list, size):
     
 def buttons():    #all buttons 
     
-    P_button=pygame.image.load(r"Downloads\PLAY.png")  #button png image
-    Q_button=pygame.image.load(r"Downloads\QUIT.png")  #button png image
+    P_button=pygame.image.load(r"PLAY.png")  #button png image
+    Q_button=pygame.image.load(r"QUIT.png")  #button png image
     P_button=pygame.transform.scale(P_button,(450,150))
     Q_button=pygame.transform.scale(Q_button,(450,150))
     Font=pygame.font.SysFont('timesnewroman',160)
