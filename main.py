@@ -135,7 +135,7 @@ def gameplay(speed_v):
         pygame.display.update()
         Clock.tick(fps)
 
-    pygame.QUIT()
+    
     quit()
      
     
@@ -232,7 +232,7 @@ def level():    #all buttons
     #msg(100,message,x_pos,y_pos,white)
                 
         pygame.display.update()
-    pygame.QUIT()
+   
     quit()
      
 
@@ -272,7 +272,7 @@ def buttons():    #all buttons
         screen.blit(Q_button,(380,430))
         if click[0]==1:
             
-            pygame.QUIT()
+           
             quit()
     #msg(100,message,x_pos,y_pos,white)
     
